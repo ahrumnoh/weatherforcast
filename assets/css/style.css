@@ -22,10 +22,28 @@ body{
 h1{
     font-weight: 700!important;
     margin-top: 150px!important;
+    color: bisque !important;
 }
     
 .input{
     width: 350px!important;
     padding:5px!important;
 }
+
+::placeholder {
+    color: darkslategray !important;
+}
+
+
+.btn {
+    background:transparent !important;
+    border:3px solid rgb(11, 218, 255) !important;
+    color: lightgreen !important;
+}
+
+.btn:hover {
+    background: teal !important;
+}
+
+
 
