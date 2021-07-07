@@ -15,5 +15,15 @@ button.addEventListener('click', (event) => {
 
     //get input value
     const cityInput = inputTxt.value;
-    console.log(cityInput);
+    //check console.log
+    //console.log(cityInput);
+
+
+    //Now Fetch Through Get API
+
+    fetch('http://api.openweathermap.org/data/2.5/weather?q={cityInput}&appid={API_key}')
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+    });
 });
