@@ -1,10 +1,11 @@
-.body{
+body{
     margin: 0px;
     padding:0px;
     box-sizing: border-box;
+    background-image: url("https://content.thriveglobal.com/wp-content/uploads/2019/04/Denver-Severe-Storm-Damage-Lawyers.jpg?w=1550");
     color:white; /* change needed */
-    font-family:Georgia, 'Times New Roman', Times, serif;/* change needed */
-    font-size: 50px;/* change needed */
+    font-family:'Times New Roman', Times, serif Times, serif;/* change needed */
+    font-size: large;/* change needed */
     background-size: cover;
     background-attachment: fixed;
 
