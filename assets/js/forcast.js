@@ -1,6 +1,6 @@
 //Get all values
 const inputTxt = document.querySelector('.inputTxt');
-var button = document.querySelector('.btn');
+var button = document.querySelector('.btn btn-success');
 const showData = document.querySelector('.showData');
 
 
@@ -15,4 +15,4 @@ button.addEventListener('click', () => {
     //get input value
     const cityInput = inputTxt.value;
     console.log(cityInput);
-})
+});
