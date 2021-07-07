@@ -1,0 +1,29 @@
+.body{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    color:white; /* change needed */
+    font-family:Georgia, 'Times New Roman', Times, serif;/* change needed */
+    font-size: 50px;/* change needed */
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.container{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width:440px;
+
+}
+
+.container .h1{
+    font-weight: 700;
+    margin-top: 150px;
+}
+    
+input{
+    width: 350px;
+    padding:5px;
+}
