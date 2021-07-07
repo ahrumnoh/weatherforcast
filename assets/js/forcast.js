@@ -1,6 +1,6 @@
 //Get all values
 const inputTxt = document.querySelector('.inputTxt');
-var button = document.querySelector('.btn btn-success');
+var button = document.querySelector('btn-success');
 const showData = document.querySelector('.showData');
 
 
