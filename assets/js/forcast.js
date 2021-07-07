@@ -6,7 +6,7 @@ const showData = document.querySelector('.showData');
 
 //get API key by Login to openweather.org
 
-const API_Key = "72a6ec4becabdca55cf6654df7c049f9";
+const API_Key = "4f2668c377a67ee3025ef5adbb087cea";
 
 //Now add event listener
 
