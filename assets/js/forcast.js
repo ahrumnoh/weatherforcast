@@ -43,7 +43,7 @@ button.addEventListener('click', (event) => {
                     
                     <ul>  
                           <h2 class="city">${data.name}</h2>            
-                          <li class="icon">${data.weather[0].icon}</li>     <----- issue          
+                          <li class="icon"><img src="https://openweathermap.org/img/wn/${ data.weather[0].icon }.png"/></li>        
                           <li class="desc">${data.weather[0].description}</li>
                           <li class="temp">Temperature: ${data.main.temp} °kelvin</li>
                           <li class="humidity">Humidity: ${data.main.humidity} %</li>
