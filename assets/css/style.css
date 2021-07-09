@@ -1,3 +1,15 @@
+body{
+    margin: 0px!important;
+    padding:0px!important;
+    box-sizing: border-box!important;
+    /* background-image: url("https://content.thriveglobal.com/wp-content/uploads/2019/04/Denver-Severe-Storm-Damage-Lawyers.jpg?w=1550");*/
+    background-image: url("https://source.unsplash.com/1600x900/?nature,water");
+    color:white!important; 
+    font-family:Georgia, 'Times New Roman', Times, serif !important;
+    font-size: large!important;
+    background-size: cover!important;
+    background-attachment: fixed!important;
+}
 
 .container{
     text-align: center!important;
