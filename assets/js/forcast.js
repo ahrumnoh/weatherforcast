@@ -22,7 +22,7 @@ button.addEventListener('click', (event) => {
 
     //Now Fetch Through Get API
 
-    fetch('http://api.openweathermap.org/data/2.5/weather?q='+cityInput+'&appid=4f2668c377a67ee3025ef5adbb087cea') 
+    fetch('http://api.openweathermap.org/data/2.5/weather?q='+cityInput+'&units=metric&appid=4f2668c377a67ee3025ef5adbb087cea') 
      
     
     
@@ -45,7 +45,7 @@ button.addEventListener('click', (event) => {
                           <h2 class="city">${data.name}</h2>            
                           <li class="icon"><img src="https://openweathermap.org/img/wn/${ data.weather[0].icon }.png"/></li>        
                           <li class="desc">${data.weather[0].description}</li>
-                          <li class="temp">Temperature: ${data.main.temp} °kelvin</li>
+                          <li class="temp">Temperature: ${data.main.temp} °C</li>
                           <li class="humidity">Humidity: ${data.main.humidity} %</li>
                           <li class="wind">Wind Speed: ${data.wind.speed}</li>
                     </ul> 

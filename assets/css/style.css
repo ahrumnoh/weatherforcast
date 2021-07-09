@@ -1,16 +1,3 @@
-body{
-    margin: 0px!important;
-    padding:0px!important;
-    box-sizing: border-box!important;
-    /* background-image: url("https://content.thriveglobal.com/wp-content/uploads/2019/04/Denver-Severe-Storm-Damage-Lawyers.jpg?w=1550");*/
-    background-image: url("https://source.unsplash.com/1600x900/?nature,water");
-    color:white!important; 
-    font-family:Georgia, 'Times New Roman', Times, serif !important;
-    font-size: large!important;
-    background-size: cover!important;
-    background-attachment: fixed!important;
-
-}
 
 .container{
     text-align: center!important;
@@ -19,6 +6,7 @@ body{
     width: 600px!important;  
 
 }
+
 
 h1{
     font-weight: 700!important;
@@ -30,6 +18,8 @@ h1{
 .inputTxt{
     width: 250px!important;
     padding:5px!important;
+    text-align: center !important;
+    justify-content: center !important;
 }
 
 ::placeholder {
@@ -39,9 +29,9 @@ h1{
 
 
 .btn {
-    background:rgb(196, 183, 169) !important;
-    border:3px solid rgb(75, 6, 6) !important;
-    color: rgba(14, 247, 255, 0.822)!important;
+    background:rgb(44, 28, 11) !important;
+    border:3px solid rgb(192, 120, 214) !important;
+    color: rgba(6, 243, 172, 0.822)!important;
     border-radius: 30% !important;
 }
 
@@ -51,10 +41,12 @@ h1{
 
 
 .card {
-    background-color: transparent!important;
+    padding-top:  1%;
+    background: #858384d0 !important;
+    /*background-color: transparent!important;*/
     margin:10% !important;
     flex-direction: column!important;
-    height: 230px!important;
+    height: 300px!important;
     width: 500px!important;
     text-align: center!important;
     justify-content: center!important;
@@ -80,8 +72,12 @@ h1{
 
 .showData .city {
     font-size: 35px !important;
-    font-weight:bold;
+    font-weight:bold !important;
+    color:yellow;
 }
 
+.showData .icon {
+    display: flex !important;
+}
 
 
