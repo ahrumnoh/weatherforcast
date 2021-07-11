@@ -88,11 +88,11 @@ const API_Key1 = "996ca7a18bf86848d417a27ae94805c7";
 
 
 
-if(!localStorage.getItem('cities')){
-  localStorage.setItem('cities', JSON.stringify([])); 
+if(!localStorage.getItem('forecast')){
+  localStorage.setItem('forecast', JSON.stringify([])); 
 }
 
-button.addEventListener('cities', (event) => {
+button.addEventListener('click', (event) => {
     event.preventDefault();
 
   //get input value
@@ -106,10 +106,7 @@ button.addEventListener('cities', (event) => {
 
 fetch('http://api.openweathermap.org/data/2.5/forecast/daily?q='+cityInput+'&cnt=5&appid=996ca7a18bf86848d417a27ae94805c7')
 
- 
-
-
-       
+    
 
 
       .then(res => res.json())
