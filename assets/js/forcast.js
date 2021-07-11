@@ -61,7 +61,7 @@ document.getElementById('currentTime').innerHTML = d.toLocaleString();
 
 
 
-//weatherforecast for 5days, Sydney
+//weatherforecast for 5 days in Sydney
 
 !function(d,s,id)
 
@@ -79,11 +79,7 @@ document.getElementById('currentTime').innerHTML = d.toLocaleString();
 
 
 
-//5days weather forecast intenationally Starts!
-//5days weather forecast intenationally- Get all values
-
-
-//5days weather forecast intenationally - Get API key for 5days
+//5days weather forecast intenationally - Get API key for 5days :Still waiting for
 const API_Key1 = "996ca7a18bf86848d417a27ae94805c7";
 
 
@@ -98,10 +94,7 @@ button.addEventListener('click', (event) => {
   //get input value
   const cityInput = inputTxt.value;
   //check console.log
-  console.log(cityInput);
-
-
-
+//  console.log(cityInput);
 
 
 fetch('http://api.openweathermap.org/data/2.5/forecast/daily?q='+cityInput+'&cnt=5&appid=996ca7a18bf86848d417a27ae94805c7')
@@ -111,6 +104,9 @@ fetch('http://api.openweathermap.org/data/2.5/forecast/daily?q='+cityInput+'&cnt
 
       .then(res => res.json())
       .then(data => {
-          console.log(data);
+//          console.log(data);
       });
 });
+
+//****Inportant NOTICE ****/ 
+// Users will then need to use that new API key for the 5 day forecast URL on OpenWeathermap of Daily Forecast 16 Days//
