@@ -7,6 +7,9 @@ This website provides weather forecast for international cities with beautiful p
 Users are able to enjoy beautiful photos every time with refresh function
 
 
+![Global Weather forecast](https://github.com/ahrumnoh/weatherforcast/blob/main/assets/image/2021-07-11%20(5).png)
+
+
 
 ## Key Topics
 
@@ -22,4 +25,6 @@ There are features of this simple schedule below.
 
 
 Thank you so much for your time :)
+
+![Global Weather forecast](https://github.com/ahrumnoh/weatherforcast/blob/main/assets/image/2021-07-11%20(8).png)
 
