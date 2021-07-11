@@ -1,4 +1,2 @@
 # weatherforcast
-
-❮img src="images/you-picture.png" width="100" ❯
-(./Assets/06-server-side-apis-homework-demo.png)
+![International Weather forecast with auto landscape photos](assets/image/2021-07-10(16).png)
