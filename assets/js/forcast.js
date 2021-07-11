@@ -79,27 +79,32 @@ document.getElementById('currentTime').innerHTML = d.toLocaleString();
 
 
 
-// //5days weather forecast intenationally Starts!
-// //5days weather forecast intenationally- Get all values
+//5days weather forecast intenationally Starts!
+//5days weather forecast intenationally- Get all values
 
 
-// //5days weather forecast intenationally - Get API key for 5days
-// const API_Key1 = "996ca7a18bf86848d417a27ae94805c7";
+//5days weather forecast intenationally - Get API key for 5days
+const API_Key1 = "996ca7a18bf86848d417a27ae94805c7";
 
 
 
-// if(!localStorage.getItem('cities')){
-//   localStorage.setItem('cities', JSON.stringify([])); 
-// }
+if(!localStorage.getItem('cities')){
+  localStorage.setItem('cities', JSON.stringify([])); 
+}
 
-// button.addEventListener('future', (event) => {
-//     event.preventDefault();
+button.addEventListener('cities', (event) => {
+    event.preventDefault();
 
-//   //get input value
-//   const cityInput = inputTxt.value;
-//   //check console.log
-  //console.log(cityInput);
+  //get input value
+  const cityInput = inputTxt.value;
+  //check console.log
+  console.log(cityInput);
 
+
+
+
+
+fetch('http://api.openweathermap.org/data/2.5/forecast/daily?q='+cityInput+'&cnt=5&appid=996ca7a18bf86848d417a27ae94805c7')
 
  
 
@@ -107,8 +112,8 @@ document.getElementById('currentTime').innerHTML = d.toLocaleString();
        
 
 
-//       .then(res => res.json())
-//       .then(data => {
-//           console.log(data);
-//       });
-// });
+      .then(res => res.json())
+      .then(data => {
+          console.log(data);
+      });
+});
