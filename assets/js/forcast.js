@@ -5,9 +5,11 @@ const showData = document.querySelector('.showData');
 
 
 
+
 //get API key by Login to openweather.org
 
 const API_Key = "4f2668c377a67ee3025ef5adbb087cea";
+
 
 //Now add event listener
 
@@ -24,7 +26,7 @@ button.addEventListener('click', (event) => {
     //console.log(cityInput);
 
     fetch('http://api.openweathermap.org/data/2.5/weather?q='+cityInput+'&units=metric&appid=4f2668c377a67ee3025ef5adbb087cea') 
-     
+    
     
     
       .then(res => res.json())
@@ -59,10 +61,46 @@ document.getElementById('currentTime').innerHTML = d.toLocaleString();
 
 
 
-//5days weatherforecast of Sydney
+//weatherforecast for 5days, Sydney
 
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);
   js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs)
   ;}}(document,'script','weatherwidget-io-js');
 
-  
+
+
+
+
+// //5days weather forecast intenationally Starts!
+// //5days weather forecast intenationally- Get all values
+
+
+// //5days weather forecast intenationally - Get API key for 5days
+// const API_Key1 = "996ca7a18bf86848d417a27ae94805c7";
+
+
+
+// if(!localStorage.getItem('cities')){
+//   localStorage.setItem('cities', JSON.stringify([])); 
+// }
+
+// button.addEventListener('future', (event) => {
+//     event.preventDefault();
+
+//   //get input value
+//   const cityInput = inputTxt.value;
+//   //check console.log
+  //console.log(cityInput);
+
+
+ 
+
+
+       
+
+
+//       .then(res => res.json())
+//       .then(data => {
+//           console.log(data);
+//       });
+// });
