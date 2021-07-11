@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 body{
     margin: 0px!important;
@@ -71,6 +71,8 @@ h1{
 
 .showData {
     margin: 5% !important;
+    font-family: 'Kaushan Script', cursive !important;   
+    font-size: 20px !important; 
 }
 
 .showData .city {
