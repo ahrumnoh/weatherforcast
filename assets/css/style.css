@@ -83,13 +83,15 @@ h1{
 
 
 
+
+
 .card1 {
     padding-top:  1%;
     background: #94948f3d !important;
     /*background-color: transparent!important;*/
     margin:10% !important;
     display: flex !important;
-    flex-direction: column!important;
+    justify-content: center !important;
     height: 300px!important;
     width: 300px!important;
     text-align: center!important;
@@ -98,13 +100,14 @@ h1{
     align-content: center!important;
     border-radius: 30%!important;
 }
+
 
 .card2 {
     padding-top:  1%;
     background: #94948f3d !important;
     /*background-color: transparent!important;*/
     margin:10% !important;
-    display:flex!important;    
+    display: flex !important;
     height: 300px!important;
     width: 300px!important;
     text-align: center!important;
@@ -113,14 +116,12 @@ h1{
     align-content: center!important;
     border-radius: 30%!important;
 }
-
 .card3 {
     padding-top:  1%;
     background: #94948f3d !important;
     /*background-color: transparent!important;*/
-    margin:10%!important;
-    display:flex!important;
-    flex-direction: column!important;
+    margin:10% !important;
+    display: flex !important;
     height: 300px!important;
     width: 300px!important;
     text-align: center!important;
@@ -136,7 +137,6 @@ h1{
     /*background-color: transparent!important;*/
     margin:10% !important;
     display: flex !important;
-    flex-direction: column!important;
     height: 300px!important;
     width: 300px!important;
     text-align: center!important;
@@ -146,13 +146,12 @@ h1{
     border-radius: 30%!important;
 }
 
-.card5 {
+.card4 {
     padding-top:  1%;
     background: #94948f3d !important;
     /*background-color: transparent!important;*/
     margin:10% !important;
     display: flex !important;
-    flex-direction: column!important;
     height: 300px!important;
     width: 300px!important;
     text-align: center!important;
