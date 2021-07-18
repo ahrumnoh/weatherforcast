@@ -1,4 +1,4 @@
-# Weatherforecast
+## ⛅Weatherforecast
 ![Global Weather forecast](https://github.com/ahrumnoh/weatherforcast/blob/main/assets/image/demo1.png?raw=true)
 
 
@@ -9,23 +9,24 @@ This website provides weather forecast for international cities with beautiful p
 Users are able to enjoy beautiful photos every time with refresh function
 
 
-![Global Weather forecast](https://github.com/ahrumnoh/weatherforcast/blob/main/assets/image/2021-07-11%20(5).png)
+![Global Weather forecast](https://github.com/ahrumnoh/weatherforcast/blob/main/assets/image/demo2.png?raw=true)
 
 
 
-## Key Topics
+## 🚩Key Topics 
+
 
 There are features of this simple schedule below.
 
-* Time and date
+* current Time and date
 * city's weather condition with icons
 * temperature based on celsius
 * humidity
 * wind speed
-* 5 days future forecasts
+* UV index
+* 5 days future forecasts 
 
 
 
-Thank you so much for your time :)
+❤ Thank you so much for your time :)
 
-![Global Weather forecast](https://github.com/ahrumnoh/weatherforcast/blob/main/assets/image/2021-07-11%20(8).png)
