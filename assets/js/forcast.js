@@ -65,7 +65,7 @@ button.addEventListener('click', (event) => {
 });
 
 function getfivedays(lat,lon){
-  var onecallAPI = "https://api.openweathermap.org/data/2.5/onecall?lat="+lat+"&lon="+lon+"&exclude=minutely,hourly,alerts&units=imperial&appid=4f2668c377a67ee3025ef5adbb087cea"
+  var onecallAPI = "https://api.openweathermap.org/data/2.5/onecall?lat="+lat+"&lon="+lon+"&exclude=minutely,hourly,alerts&units=metric&appid=4f2668c377a67ee3025ef5adbb087cea"
  
  
   fetch(onecallAPI) 
@@ -82,42 +82,51 @@ function getfivedays(lat,lon){
 
 
    card1.innerHTML =`
-   <p class ="weekday">${data.daily[1].dt}</p>
-   <p class="tempmax">Temp: ${data.daily[1].temp.day}</p>
-   <p class="windspeed">Wind: ${data.daily[1].wind_speed}</p>
-   <p class="huminity">Humidity${data.daily[1].humidity}</p>
-  
+   
+   <ul>
+      <p class="temp">Temp: ${data.daily[1].temp.day}</p>
+      <p class="wind">Wind: ${data.daily[1].wind_speed}</p>
+      <p class="humidity">Humi: ${data.daily[1].humidity}</p>
+   </ul>
    `;
 
    card2.innerHTML =`
-   <p class ="weekday">${data.daily[2].dt}</p>
-   <p class="tempmax">${data.daily[2].temp.day}</p>
-   <p class="windspeed">${data.daily[2].wind_speed}</p>
-   <p class="huminity">${data.daily[2].humidity}</p>
+
+   <ul>  
+      <p class="temp">Temp: ${data.daily[2].temp.day}</p>
+      <p class="wind">Wind: ${data.daily[2].wind_speed}</p>
+      <p class="humidity">Humi:${data.daily[2].humidity}</p>
+   </ul>
   
    `;
 
    card3.innerHTML =`
-   <p class ="weekday">${data.daily[3].dt}</p>
-   <p class="tempmax">${data.daily[3].temp.day}</p>
-   <p class="windspeed">${data.daily[3].wind_speed}</p>
-   <p class="huminity">${data.daily[3].humidity}</p>
+   
+   <ul>
+      <p class="temp">Temp: ${data.daily[3].temp.day}</p>
+      <p class="wind">Wind: ${data.daily[3].wind_speed}</p>
+      <p class="humidity">Humi: ${data.daily[3].humidity}</p>
+   </ul>
   
    `;
 
    card4.innerHTML =`
-   <p class ="weekday">${data.daily[4].dt}</p>
-   <p class="tempmax">${data.daily[4].temp.day}</p>
-   <p class="windspeed">${data.daily[4].wind_speed}</p>
-   <p class="huminity">${data.daily[4].humidity}</p>
+   
+   <ul>
+      <p class="temp">Temp: ${data.daily[4].temp.day}</p>
+      <p class="wind">Wind: ${data.daily[4].wind_speed}</p>
+      <p class="humidity">Humi: ${data.daily[4].humidity}</p>
+   </ul>
   
    `;
 
    card5.innerHTML =`
-   <p class ="weekday">${data.daily[5].dt}</p>
-   <p class="tempmax">${data.daily[5].temp.day}</p>
-   <p class="windspeed">${data.daily[5].wind_speed}</p>
-   <p class="huminity">${data.daily[5].humidity}</p>
+
+   <ul>
+      <p class="temp">Temp: ${data.daily[5].temp.day}</p>
+      <p class="wind">Wind: ${data.daily[5].wind_speed}</p>
+      <p class="humidity">Humi: ${data.daily[5].humidity}</p>
+   </ul>
   
    `;
   });
