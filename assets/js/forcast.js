@@ -2,6 +2,7 @@
 const inputTxt = document.querySelector('.inputTxt');
 var button = document.querySelector('.btn');
 const showData = document.querySelector('.showData');
+const forecastEl = document.getElementById("futureform");
 
 
 
@@ -41,18 +42,54 @@ button.addEventListener('click', (event) => {
 
             showData.innerHTML = `
                         
-                    <ul>  
+                      
                           <h2 class="city">${data.name}</h2>            
-                            <li class="icon"><img src="https://openweathermap.org/img/wn/${ data.weather[0].icon }.png"/></li>        
-                            <li class="desc">${data.weather[0].description}</li>
-                            <li class="temp">Temperature: ${data.main.temp} °C</li>
-                            <li class="humidity">Humidity: ${data.main.humidity} %</li>
-                            <li class="wind">Wind Speed: ${data.wind.speed}</li>
-                    </ul> 
-                    `;                            
+                            <p class="icon"><img src="https://openweathermap.org/img/wn/${ data.weather[0].icon }.png"/></p>        
+                            <p class="desc">${data.weather[0].description}</p>
+                            <p class="temp">Temperature: ${data.main.temp} °C</p>
+                            <p class="humidity">Humidity: ${data.main.humidity} %</p>
+                            <p class="wind">Wind Speed: ${data.wind.speed}</p>
+                    
+                    `;    
+                    console.log(data.coord.lat);
+                    console.log(data.coord.lon);   
+                    getfivedays(data.coord.lat,data.coord.lon);                     
 
      });
 });
+
+function getfivedays(lat,lon){
+  var onecallAPI = "https://api.openweathermap.org/data/2.5/onecall?lat="+lat+"&lon="+lon+"&exclude=minutely,hourly,alerts&units=imperial&appid=4f2668c377a67ee3025ef5adbb087cea"
+ fetch(onecallAPI) 
+ .then (function(response){
+   return response.json()
+ }).then(function(data){
+   console.log(data);
+   var uviEl = document.createElement("p")
+   uviEl.innerHTML = "UV Index:"+ data.current.uvi;
+   showData.append(uviEl)
+   forecastEl.innerHTML = ""
+   for(var i = 1; i<6; i++){
+     console.log(data.daily[i])
+     var divEl = document.createElement("div");
+     divEl.innerHTML = `
+     <p class="weekday">${data.daily[i].dt}</p>
+     <p class="tempmax">${data.daily[i].temp.day}</p>
+     <p class="windspeed">${data.daily[i].wind_speed}</p>
+     <p class="huminity">${data.daily[i].humidity}</p>
+     ` 
+     forecastEl.append(divEl)
+   }
+ })
+}   
+
+
+
+
+
+
+
+
 
 
 // Current Time //
@@ -79,34 +116,3 @@ document.getElementById('currentTime').innerHTML = d.toLocaleString();
 
 
 
-//5days weather forecast intenationally - Get API key for 5days :Still waiting for
-const API_Key1 = "996ca7a18bf86848d417a27ae94805c7";
-
-
-
-if(!localStorage.getItem('forecast')){
-  localStorage.setItem('forecast', JSON.stringify([])); 
-}
-
-button.addEventListener('click', (event) => {
-    event.preventDefault();
-
-  //get input value
-  const cityInput = inputTxt.value;
-  //check console.log
-//  console.log(cityInput);
-
-
-fetch('http://api.openweathermap.org/data/2.5/forecast/daily?q='+cityInput+'&cnt=5&appid=996ca7a18bf86848d417a27ae94805c7')
-
-    
-
-
-      .then(res => res.json())
-      .then(data => {
-//          console.log(data);
-      });
-});
-
-//****Inportant NOTICE ****/ 
-// Users will then need to use that new API key for the 5 day forecast URL on OpenWeathermap of Daily Forecast 16 Days//

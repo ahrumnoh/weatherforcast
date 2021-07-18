@@ -82,3 +82,82 @@ h1{
 }
 
 
+
+.card1 {
+    padding-top:  1%;
+    background: #94948f3d !important;
+    /*background-color: transparent!important;*/
+    margin:10% !important;
+    display: flex !important;
+    flex-direction: column!important;
+    height: 300px!important;
+    width: 300px!important;
+    text-align: center!important;
+    justify-content: center!important;
+    border: rgb(29, 233, 233) solid 5px !important;
+    align-content: center!important;
+    border-radius: 30%!important;
+}
+
+.card2 {
+    padding-top:  1%;
+    background: #94948f3d !important;
+    /*background-color: transparent!important;*/
+    margin:10% !important;
+    display:flex!important;    
+    height: 300px!important;
+    width: 300px!important;
+    text-align: center!important;
+    justify-content: center!important;
+    border: rgb(29, 233, 233) solid 5px !important;
+    align-content: center!important;
+    border-radius: 30%!important;
+}
+
+.card3 {
+    padding-top:  1%;
+    background: #94948f3d !important;
+    /*background-color: transparent!important;*/
+    margin:10%!important;
+    display:flex!important;
+    flex-direction: column!important;
+    height: 300px!important;
+    width: 300px!important;
+    text-align: center!important;
+    justify-content: center!important;
+    border: rgb(29, 233, 233) solid 5px !important;
+    align-content: center!important;
+    border-radius: 30%!important;
+}
+
+.card4 {
+    padding-top:  1%;
+    background: #94948f3d !important;
+    /*background-color: transparent!important;*/
+    margin:10% !important;
+    display: flex !important;
+    flex-direction: column!important;
+    height: 300px!important;
+    width: 300px!important;
+    text-align: center!important;
+    justify-content: center!important;
+    border: rgb(29, 233, 233) solid 5px !important;
+    align-content: center!important;
+    border-radius: 30%!important;
+}
+
+.card5 {
+    padding-top:  1%;
+    background: #94948f3d !important;
+    /*background-color: transparent!important;*/
+    margin:10% !important;
+    display: flex !important;
+    flex-direction: column!important;
+    height: 300px!important;
+    width: 300px!important;
+    text-align: center!important;
+    justify-content: center!important;
+    border: rgb(29, 233, 233) solid 5px !important;
+    align-content: center!important;
+    border-radius: 30%!important;
+}
