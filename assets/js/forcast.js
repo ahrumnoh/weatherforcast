@@ -2,7 +2,13 @@
 const inputTxt = document.querySelector('.inputTxt');
 var button = document.querySelector('.btn');
 const showData = document.querySelector('.showData');
-const forecastEl = document.getElementById("futureform");
+const container1 = document.getElementById("container1");
+const card1 = document.querySelector('.card1');
+const card2 = document.querySelector('.card2');
+const card3 = document.querySelector('.card3');
+const card4 = document.querySelector('.card4');
+const card5 = document.querySelector('.card5');
+
 
 
 
@@ -71,23 +77,51 @@ function getfivedays(lat,lon){
 
    var uviEl = document.createElement("p")
    uviEl.innerHTML = "UV Index:"+ data.current.uvi;
-
-   
    showData.append(uviEl)
-   forecastEl.innerHTML = ""
-   for(var i = 1; i<6; i++){
-     console.log(data.daily[i])
-     var divEl = document.createElement("div");
-     divEl.innerHTML = `
-     <p class="weekday">${data.daily[i].dt}</p>
-     <p class="tempmax">${data.daily[i].temp.day}</p>
-     <p class="windspeed">${data.daily[i].wind_speed}</p>
-     <p class="huminity">${data.daily[i].humidity}</p>
-     ` 
-     forecastEl.append(divEl)
-   }
- })
-}   
+
+
+
+   card1.innerHTML =`
+   <p class ="weekday">${data.daily[1].dt}</p>
+   <p class="tempmax">Temp: ${data.daily[1].temp.day}</p>
+   <p class="windspeed">Wind: ${data.daily[1].wind_speed}</p>
+   <p class="huminity">Humidity${data.daily[1].humidity}</p>
+  
+   `;
+
+   card2.innerHTML =`
+   <p class ="weekday">${data.daily[2].dt}</p>
+   <p class="tempmax">${data.daily[2].temp.day}</p>
+   <p class="windspeed">${data.daily[2].wind_speed}</p>
+   <p class="huminity">${data.daily[2].humidity}</p>
+  
+   `;
+
+   card3.innerHTML =`
+   <p class ="weekday">${data.daily[3].dt}</p>
+   <p class="tempmax">${data.daily[3].temp.day}</p>
+   <p class="windspeed">${data.daily[3].wind_speed}</p>
+   <p class="huminity">${data.daily[3].humidity}</p>
+  
+   `;
+
+   card4.innerHTML =`
+   <p class ="weekday">${data.daily[4].dt}</p>
+   <p class="tempmax">${data.daily[4].temp.day}</p>
+   <p class="windspeed">${data.daily[4].wind_speed}</p>
+   <p class="huminity">${data.daily[4].humidity}</p>
+  
+   `;
+
+   card5.innerHTML =`
+   <p class ="weekday">${data.daily[5].dt}</p>
+   <p class="tempmax">${data.daily[5].temp.day}</p>
+   <p class="windspeed">${data.daily[5].wind_speed}</p>
+   <p class="huminity">${data.daily[5].humidity}</p>
+  
+   `;
+  });
+ }   
 
 
 
