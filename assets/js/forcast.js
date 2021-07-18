@@ -84,18 +84,20 @@ function getfivedays(lat,lon){
    card1.innerHTML =`
    
    <ul>
-      <p class="temp">Temp: ${data.daily[1].temp.day}</p>
-      <p class="wind">Wind: ${data.daily[1].wind_speed}</p>
-      <p class="humidity">Humi: ${data.daily[1].humidity}</p>
+      <p class="icon"><img src="https://openweathermap.org/img/wn/${ data.daily[1].weather[0].icon }.png"/></p>
+      <p class="temp"><i class="fas fa-temperature-high"></i> ${data.daily[1].temp.day}</p>
+      <p class="wind"><i class="fas fa-wind"></i> : ${data.daily[1].wind_speed}</p>
+      <p class="humidity"><i class="fas fa-tint"></i> : ${data.daily[1].humidity}</p>
    </ul>
    `;
 
    card2.innerHTML =`
 
-   <ul>  
-      <p class="temp">Temp: ${data.daily[2].temp.day}</p>
-      <p class="wind">Wind: ${data.daily[2].wind_speed}</p>
-      <p class="humidity">Humi:${data.daily[2].humidity}</p>
+   <ul>
+      <p class="icon"><img src="https://openweathermap.org/img/wn/${ data.daily[2].weather[0].icon }.png"/></p>  
+      <p class="temp"><i class="fas fa-temperature-high"></i>${data.daily[2].temp.day}</p>
+      <p class="wind"><i class="fas fa-wind"></i> : ${data.daily[2].wind_speed}</p>
+      <p class="humidity"><i class="fas fa-tint"></i> : ${data.daily[2].humidity}</p>
    </ul>
   
    `;
@@ -103,19 +105,21 @@ function getfivedays(lat,lon){
    card3.innerHTML =`
    
    <ul>
-      <p class="temp">Temp: ${data.daily[3].temp.day}</p>
-      <p class="wind">Wind: ${data.daily[3].wind_speed}</p>
-      <p class="humidity">Humi: ${data.daily[3].humidity}</p>
+      <p class="icon"><img src="https://openweathermap.org/img/wn/${ data.daily[3].weather[0].icon }.png"/></p>
+      <p class="temp"><i class="fas fa-temperature-high"></i> ${data.daily[3].temp.day}</p>
+      <p class="wind"><i class="fas fa-wind"></i> : ${data.daily[3].wind_speed}</p>
+      <p class="humidity"><i class="fas fa-tint"></i> : ${data.daily[3].humidity}</p>
    </ul>
   
    `;
 
    card4.innerHTML =`
    
-   <ul>
-      <p class="temp">Temp: ${data.daily[4].temp.day}</p>
-      <p class="wind">Wind: ${data.daily[4].wind_speed}</p>
-      <p class="humidity">Humi: ${data.daily[4].humidity}</p>
+   <ul>  
+      <p class="icon"><img src="https://openweathermap.org/img/wn/${ data.daily[4].weather[0].icon }.png"/></p>
+      <p class="temp"><i class="fas fa-temperature-high"></i> ${data.daily[4].temp.day}</p>
+      <p class="wind"><i class="fas fa-wind"></i> : ${data.daily[4].wind_speed}</p>
+      <p class="humidity"><i class="fas fa-tint"></i> :  ${data.daily[4].humidity}</p>
    </ul>
   
    `;
@@ -123,9 +127,10 @@ function getfivedays(lat,lon){
    card5.innerHTML =`
 
    <ul>
-      <p class="temp">Temp: ${data.daily[5].temp.day}</p>
-      <p class="wind">Wind: ${data.daily[5].wind_speed}</p>
-      <p class="humidity">Humi: ${data.daily[5].humidity}</p>
+      <p class="icon"><img src="https://openweathermap.org/img/wn/${ data.daily[5].weather[0].icon }.png"/></p>
+      <p class="temp"><i class="fas fa-temperature-high"></i> ${data.daily[5].temp.day}</p>
+      <p class="wind"><i class="fas fa-wind"></i> : ${data.daily[5].wind_speed}</p>
+      <p class="humidity"><i class="fas fa-tint"></i> : ${data.daily[5].humidity}</p>
    </ul>
   
    `;
