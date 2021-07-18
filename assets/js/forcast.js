@@ -60,13 +60,19 @@ button.addEventListener('click', (event) => {
 
 function getfivedays(lat,lon){
   var onecallAPI = "https://api.openweathermap.org/data/2.5/onecall?lat="+lat+"&lon="+lon+"&exclude=minutely,hourly,alerts&units=imperial&appid=4f2668c377a67ee3025ef5adbb087cea"
- fetch(onecallAPI) 
+ 
+ 
+  fetch(onecallAPI) 
  .then (function(response){
    return response.json()
  }).then(function(data){
    console.log(data);
+
+
    var uviEl = document.createElement("p")
    uviEl.innerHTML = "UV Index:"+ data.current.uvi;
+
+   
    showData.append(uviEl)
    forecastEl.innerHTML = ""
    for(var i = 1; i<6; i++){
@@ -82,10 +88,6 @@ function getfivedays(lat,lon){
    }
  })
 }   
-
-
-
-
 
 
 
