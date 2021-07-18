@@ -32,7 +32,7 @@ button.addEventListener('click', (event) => {
     //check console.log
     //console.log(cityInput);
 
-    fetch('http://api.openweathermap.org/data/2.5/weather?q='+cityInput+'&units=metric&appid=4f2668c377a67ee3025ef5adbb087cea') 
+    fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput+'&units=metric&appid=4f2668c377a67ee3025ef5adbb087cea') 
     
     
     
