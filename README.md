@@ -1,5 +1,5 @@
 # Weatherforecast
-![Global Weather forecast](C:\Users\sydne\USYDfirsthw\weatherforcast\assets\image\demo1.png)
+![Global Weather forecast](https://github.com/ahrumnoh/weatherforcast/blob/main/assets/image/demo1.png?raw=true)
 
 
 
