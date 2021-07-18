@@ -76,10 +76,9 @@ h6 {
 .card {
     padding-top:  1%;
     background: #94948f3d !important;
-    /*background-color: transparent!important;*/
     margin:10% !important;
     flex-direction: column!important;
-    height: 300px!important;
+    height: 380px!important;
     width: 500px!important;
     text-align: center!important;
     justify-content: center!important;
@@ -91,7 +90,7 @@ h6 {
 .showData {
     margin: 5% !important;
     font-family: 'Kaushan Script', cursive !important;   
-    font-size: 20px !important; 
+    font-size: 15px !important; 
 }
 
 .showData .city {
@@ -110,8 +109,8 @@ h6 {
 
 
 .card1 {
-    padding-top:  1%;
     background: #94948f3d !important;
+    color: yellow !important;
     margin:2% !important;    
     display:Inline-flex !important;
     justify-content: center !important;
@@ -119,27 +118,27 @@ h6 {
     width: 150px!important;
     text-align:justify !important;
     justify-content: center!important;
-    border: rgb(29, 233, 233) solid 5px !important;
+    border: rgb(37, 92, 92) solid 5px !important;
     align-content: space-around !important;
     border-radius: 30%!important;
 }
 
 
 .card2 {
-    padding-top:  1%;
     background: #94948f3d !important;
+    color:beige !important;
     margin:2% !important;      
     display:inline-flex !important;
     height: 150px!important;
     width: 150px!important;
     text-align: center!important;
     justify-content: center!important;
-    border: rgb(29, 233, 233) solid 5px !important;
+    border: rgb(37, 92, 92) solid 5px !important;
     align-content: space-around !important;
     border-radius: 30%!important;
 }
 .card3 {
-    padding-top:  1%;
+    color:beige !important;
     background: #94948f3d !important;
     margin:2% !important;  
     display: inline-flex !important;
@@ -147,13 +146,13 @@ h6 {
     width: 150px!important;
     text-align: center!important;
     justify-content: center!important;
-    border: rgb(29, 233, 233) solid 5px !important;
+    border: rgb(37, 92, 92) solid 5px !important;
     align-content:space-around !important;
     border-radius: 30%!important;
 }
 
 .card4 {
-    padding-top:  1%;
+    color:beige !important;
     background: #94948f3d !important;
     margin:2% !important;  
     display:inline-flex !important;
@@ -161,13 +160,13 @@ h6 {
     width: 150px!important;
     text-align: center!important;
     justify-content: center!important;
-    border: rgb(29, 233, 233) solid 5px !important;
+    border: rgb(37, 92, 92) solid 5px !important;
     align-content: space-around !important;
     border-radius: 30%!important;
 }
 
 .card5 {
-    padding-top:  1%;
+    color:beige !important;
     background: #94948f3d !important;
     margin:2% !important;  
     display:inline-flex !important;
@@ -175,7 +174,7 @@ h6 {
     width: 150px!important;
     text-align: center!important;
     justify-content: center!important;
-    border: rgb(29, 233, 233) solid 5px !important;
+    border: rgb(37, 92, 92) solid 5px !important;
     align-content: space-around !important;
     border-radius: 30%!important;
 }
