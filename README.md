@@ -27,7 +27,13 @@ There are features of this simple schedule below.
 * 5 days future forecasts 
 
 ## 🚩UV INDEX color
-![UV color]() 
+![UV color](https://github.com/ahrumnoh/weatherforcast/blob/main/assets/image/UV-index-scale-scaled.jpg?raw=true) 
+
+* UV Index from 0-2  => Green
+* UV Index from 3-5  => Yellow
+* UV Index from 6-7  => Orange
+* UV Index from 8-10  => Red
+* UV Index more than 11  => Purple
 
 
 
