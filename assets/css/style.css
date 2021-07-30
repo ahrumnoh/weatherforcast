@@ -178,3 +178,37 @@ h6 {
     align-content: space-around !important;
     border-radius: 30%!important;
 }
+
+.green {
+    background-color: green !important;
+    color:white !important;
+}
+
+.yellow {
+    background-color:yellow !important;
+    color:black !important;
+}
+
+.orange {
+    background-attachment: orange !important;
+    color:white !important;
+}
+
+.red {
+    background-attachment: red !important;
+    color:white !important;
+}
+
+
+.purple {
+    background:violet !important;
+    color:white !important;
+}
+
+
+.recent-Search{
+    background:rgba(143, 115, 85, 0) !important;
+    border:3px solid rgb(236, 214, 9) !important;
+    color: rgba(245, 156, 22, 0.822)!important;
+    border-radius: 30% !important;
+}
