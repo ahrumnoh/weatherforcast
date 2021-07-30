@@ -26,6 +26,9 @@ There are features of this simple schedule below.
 * UV index
 * 5 days future forecasts 
 
+## 🚩UV INDEX color
+![UV color]() 
+
 
 
 ❤ Thank you so much for your time :)
